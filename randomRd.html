@@ -1,38 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <title>ランダムリダイレクト</title>
+    <script>
+        var urls = [
+            'https://qiita.com/takatama/items/0d67609b9332c550b9d2',
+            'https://qiita.com/snow_swallow/items/631bbceabbb953da2646',
+            'https://yurinchi2525.com/2023011howtoaddtextmeshpro/'
+        ];
+ 
+        function redirectToRandomURL() {
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ja"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;ランダムリダイレクト&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>var urls = [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'https://example.com/page1',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'https://example.com/page2',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>'https://example.com/page3'</p>
-<p class="p1"><span class="Apple-converted-space">        </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function redirectToRandomURL() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var randomIndex = Math.floor(Math.random() * urls.length);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>window.location.href = urls[randomIndex];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body onload="redirectToRandomURL()"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;ランダムリダイレクト中...&lt;/h1&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body onload="redirectToRandomURL()">
+    <h1>ランダムリダイレクト中...</h1>
 </body>
 </html>
